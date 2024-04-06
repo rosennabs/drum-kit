@@ -1,12 +1,9 @@
 'use client'
 import 'tailwindcss/tailwind.css';
+import Link from 'next/link';
 
 function Home() {
 
-  const handleButtonClick = () => {
-  console.log("Button Clicked");
-  
-}
 
   return (
     <div
@@ -18,13 +15,16 @@ function Home() {
           {' '}
           Welcome to DrumFest!{' '}
         </h1>
-        <button
+
+        <Link href='/game'>
+          <button
           type='button'
-          onClick={()=> handleButtonClick()}
           className='bg-green-700 hover:bg-green-800 text-white font-bold py-5 px-16 rounded-md text-3xl'
         >
           START
         </button>
+        </Link>
+        
       </div>
     </div>
   );

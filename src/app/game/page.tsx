@@ -1,6 +1,7 @@
 import React from 'react'
 import 'tailwindcss/tailwind.css';
 
+
 function Game() {
   return (
     <div className='h-screen flex items-center justify-center'
@@ -10,4 +11,4 @@ function Game() {
   )
 }
 
-export default Game
+export default Game;
