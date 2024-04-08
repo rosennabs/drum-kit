@@ -49,7 +49,7 @@ function Drums() {
       style={{ backgroundImage: `url('/gameBackground.jpg')` }}
     >
       <div className="w-90 flex flex-col items-center">
-        <h1 className="text-5xl text-white mb-16">Hit the drums!</h1>
+        <h1 className="text-5xl text-white mb-16">Hit the keyboard keys!</h1>
 
         <div className="flex flex-row justify-evenly">
           {drumHits.map((hit) => (
@@ -58,7 +58,10 @@ function Drums() {
               className={`flex flex-col items-center border-solid border-4 ${
                 borderColor[hit.key] || "border-green-400"
               } mx-4 py-4 px-8 mb-16`}
-              style={{ width: "100px" }}
+              style={{
+                width: "100px",
+                boxShadow: borderColor[hit.key] ? "0 0 20px #FFC107" : "none", // Apply shadow when the corresponding key is pressed
+              }}
             >
               <kbd className="text-4xl text-white">{hit.key}</kbd>
               <p className="text-amber-400 text-sm">{hit.sound}</p>
@@ -67,8 +70,8 @@ function Drums() {
         </div>
 
         <Link href="/">
-          <span className="text-2xl underline underline-offset-4 text-white">
-            Finish
+          <span className="text-2xl underline underline-offset-4 text-amber-400">
+            Exit
           </span>
         </Link>
       </div>

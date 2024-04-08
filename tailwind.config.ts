@@ -14,7 +14,7 @@ const config: Config = {
       white: colors.white,
       gray: colors.gray,
       amber: colors.amber,
-      yellow: colors.yellow,
+      blue: colors.blue,
       green: colors.green
     },
     extend: {
