@@ -8,6 +8,12 @@ import { drumHits } from "./helpers";
 function Drums() {
   const [borderColor, setBorderColor] = useState({});
 
+  const playSound = (hit) => {
+     // Create an Audio object for the sound
+    const sound = new Audio(`/sounds/${hit}.wav`);
+    sound.play();
+  }
+
   useEffect(() => {
     const handleKeyDown = (event) => {
       const hit = drumHits.find(
@@ -19,6 +25,8 @@ function Drums() {
           ...prev,
           [hit.key]: "border-amber-400",
         }));
+        
+        playSound(hit.sound.toLowerCase());
       }
     };
 
