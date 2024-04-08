@@ -21,3 +21,6 @@ Run the development server:
 
 Open [http://localhost:3000] with your browser to view the app.
 
+
+### Note
+This simple app is 1 of 30 [#JavaScript30](https://javascript30.com/) coding challenge.
