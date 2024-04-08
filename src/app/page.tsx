@@ -8,11 +8,11 @@ function Home() {
   return (
     <div
       className='h-screen flex items-center justify-center'
-      style={{ backgroundImage: `url('/background.jpg')` }}
+      style={{ backgroundImage: `url('images/background.jpg')` }}
     >
       <div className='flex flex-col items-center'>
         <h1 className='text-amber-600 text-5xl mb-16 uppercase'>
-          Welcome to DrumFest!
+          Welcome to DrumKit!
         </h1>
 
         <Link href='/drums'>

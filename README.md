@@ -1,5 +1,13 @@
 # Drum Kit
+
+![Screenshot 1](/public/images/homeScreenshot.png)
+
+
 Play the drum for a concert by hitting the corresponding keys on your keyboard.
+
+![Screenshot 2](/public/images/drumsScreenshot.png)
+
+
 
 ## Getting Started
 
