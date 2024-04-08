@@ -50,15 +50,21 @@ function Drums() {
       <div className='w-90 flex flex-col items-center'>
         <h1 className='text-5xl text-white mb-16'>Hit the drums!</h1>
 
+        
+
+    
         <div className='flex flex-row justify-evenly'>
-          <div className='flex flex-col items-center border-solid border-2 border-green-400 py-4 px-8'>
-            <p className='text-4xl text-white'>A</p>
-            <p className='text-amber-400 text-sm'>CLAP</p>
+          {drumHits.map((hit) => (
+            <div key={hit.key} className='flex flex-col items-center border-solid border-4 border-green-400 mx-4 py-4 px-8 mb-16' style={{ width: '100px' }}>
+            <p className='text-4xl text-white'>{hit.key}</p>
+            <p className='text-amber-400 text-sm'>{hit.sound}</p>
           </div>
+        ))}
+          
         </div>
 
         <Link href='/'>
-          <span className='text-2xl underline underline-offset-4 text-amber-400 ml-96'>Finish</span>
+          <span className='text-2xl underline underline-offset-4 text-white'>Finish</span>
         </Link>
       </div>
       
