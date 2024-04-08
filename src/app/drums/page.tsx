@@ -9,6 +9,12 @@ function Drums() {
       style={{ backgroundImage: `url('/gameBackground.jpg')` }}>
       <div className='w-90 flex flex-col items-center'>
         <h1 className='text-5xl text-white mb-16'>Hit the drums!</h1>
+        <div className='flex flex-row justify-evenly'>
+          <div className='flex flex-col items-center border-solid border-2 border-green-400 py-4 px-8'>
+            <p className='text-4xl text-white'>A</p>
+            <p className='text-amber-400 text-sm'>CLAP</p>
+          </div>
+        </div>
         <Link href='/'>
           <span className='text-2xl underline underline-offset-4 text-amber-400 ml-96'>Finish</span>
         </Link>
